@@ -19,7 +19,7 @@ class Parser:
 
     
     def write(self, path, dest, content, ext=".html"):
-        full_path = self.dest / path.with_suffex(ext).name
+        full_path = dest / path.with_suffex(ext).name
         with open(fuell_path, "w") as file:
              file.write(content)
 
