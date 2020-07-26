@@ -9,7 +9,7 @@ class Content(Mapping):
 
     @classmethod
     def load(cls, string):
-        _, fm, contnet = cls.__regex.split(string,2)
+        _, fm, content = cls.__regex.split(string,2)
         load(fm, Loader=FullLoader)
 
         return cls(metadata, content)
